@@ -1,0 +1,17 @@
+Flask==3.1.0
+gunicorn==23.0.0
+mysql-connector-python==8.0.33  # DIREVISI
+PyMySQL==1.0.3                 # TAMBAHAN (Sangat direkomendasikan untuk Azure)
+
+# Dependencies Flask (Opsional, tapi versi terkunci)
+blinker==1.9.0
+click==8.1.8
+itsdangerous==2.2.0
+Jinja2==3.1.5
+MarkupSafe==3.0.2
+Werkzeug==3.1.3
+
+# Paket yang Dihapus/Ditolak (Lihat penjelasan di bawah)
+# colorama==0.4.6
+# mysql-connector==2.2.9
+# packaging==24.2
