@@ -15,11 +15,11 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 conn = connector.connect(
-    user="Rentalmobil1", 
-    password="Rentalmobil1", 
-    host="rentalcloud.mysql.database.azure.com", 
-    port=3306, 
-    database="rental"
+    host='127.0.0.1',
+    user='tuan',
+    passwd='passwordku',
+    database='rental',
+    port=3306
 )
 cursor = conn.cursor()
 
