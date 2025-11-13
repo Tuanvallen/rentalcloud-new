@@ -10,7 +10,7 @@
   </head>
   <body>
     <section class="h-100 h-custom gradient-custom-2">
-      <form action="{{ url_for('tempat')}}" method="POST" onsubmit="return validateForm();"
+      <form action="{{ url_for('tempat')}}" method="POST" onsubmit="return validateForm();">
         <div class="container py-5 h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
             <!-- Notifikasi -->
@@ -76,7 +76,7 @@
                         <div class="mb-4 pb-2">
                           <div class="form-outline form-white">
                             <label class="form-label" for="form3Examplea2">Dusun</label>
-                            <input type="text" id="form3Examplea2" name="dusun" class="form-control form-control-lg" />
+                            <input type="text" id="form3Examplea2" name="dusun" class="form-control form-control-lg" required/>
                           </div>
                         </div>
 
@@ -86,8 +86,8 @@
                               <div class="form-group">
                                 <div class="select">
                                   <label>Provinsi:</label><br />
-                                  <select name="provinsi" id="provinsi" class="form-select form-select-lg">
-                                    <option>Pilih</option>
+                                  <select name="provinsi" id="provinsi" class="form-select form-select-lg" required>
+                                    <option value="">Pilih Provinsi</option>
                                   </select>
                                 </div>
                               </div>
@@ -97,8 +97,8 @@
                             <div class="form-outline form-white">
                               <div class="form-group">
                                 <label>Kab/Kota:</label><br />
-                                <select name="kota" id="kota" class="form-select form-select-lg">
-                                  <option>Pilih</option>
+                                <select name="kota" id="kota" class="form-select form-select-lg" required>
+                                  <option value="">Pilih Kabupaten/Kota</option>
                                 </select>
                               </div>
                             </div>
@@ -109,9 +109,9 @@
                             <div class="form-outline form-white">
                               <div class="form-group">
                                 <div class="select">
-                                  <label>kecamatan:</label><br />
-                                  <select name="kecamatan" id="kecamatan" class="form-select form-select-lg">
-                                    <option>Pilih</option>
+                                  <label>Kecamatan:</label><br />
+                                  <select name="kecamatan" id="kecamatan" class="form-select form-select-lg" required>
+                                    <option value="">Pilih Kecamatan</option>
                                   </select>
                                 </div>
                               </div>
@@ -121,14 +121,14 @@
                             <div class="form-outline form-white">
                               <div class="form-group">
                                 <label>Kelurahan:</label><br />
-                                <select name="kelurahan" id="kelurahan" class="form-select form-select-lg">
-                                  <option>Pilih</option>
+                                <select name="kelurahan" id="kelurahan" class="form-select form-select-lg" required>
+                                  <option value="">Pilih Kelurahan</option>
                                 </select>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <button class="btn btn-primary" type="submit">Daftar</button>
+                        <button class="btn btn-light btn-lg" type="submit">Daftar</button>
                       </div>
                     </div>
                   </div>
@@ -141,7 +141,8 @@
     </section>
     <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.js')}}"></script>
     <script src="{{ url_for('static', filename='js/wilayah.js')}}"></script>
-    <script src="{{ url_for('static', filename='js/wilayah1.js')}}"></script>
+    <!-- Hapus atau comment file wilayah1.js jika tidak diperlukan -->
+    <!-- <script src="{{ url_for('static', filename='js/wilayah1.js')}}"></script> -->
     <script src="{{ url_for('static', filename='js/main.js')}}"></script>
   </body>
 </html>
